@@ -1,0 +1,167 @@
+@charset "UTF-8";
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: MrEavesXLModOT-Reg, Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.armoredcars-wrap {
+  max-width: 1280px;
+  height: 2000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@font-face {
+  font-family: "MrEavesXLModOT-Reg";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/MrEavesXLModOT-Reg.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "MrEavesXLModOT";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../MrEavesXLModOT-Bold.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "MrEavesXLModOT-Reg";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/MrEavesXLModOT-Reg.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "MrEavesXLModOT";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../MrEavesXLModOT-Bold.ttf") format("woff2");
+}
+
+.armoredcars-promo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 600px;
+  width: 100%;
+}
+
+.armoredcars-promo__item {
+  position: relative;
+}
+
+.armoredcars-promo__item-content {
+  position: absolute;
+  height: 10%;
+  width: 100%;
+}
+
+.armoredcars-promo__item-content-wrap {
+  padding-left: 60px;
+  padding-top: 80px;
+}
+
+.armoredcars-promo__item-breadcrumbs {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 10px 0px 0px 20px;
+  text-transform: uppercase;
+}
+
+.armoredcars-promo__item-text {
+  color: #ffffff;
+}
+
+.armoredcars-promo__item-text h2 {
+  font-family: MrEavesXLModOT, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+
+.armoredcars-promo__item-text p {
+  color: #ffffff;
+  height: 150px;
+  font-family: MrEavesXLModOT-Reg, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1.12rem;
+  line-height: 1.33;
+  letter-spacing: 0.15px;
+  width: 332px;
+}
+
+.btn {
+  border: solid 2px #8a95a6;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.armoredcars-promo__item-button {
+  background-color: transparent;
+  color: #ffffff;
+  font-family: MrEavesXLModOT, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  height: 55px;
+  text-transform: uppercase;
+  width: 200px;
+}
+
+.armoredcars-promo__item-button:hover {
+  border: solid 2px #ffffff;
+  background-color: #ffffff;
+  color: #0020b1;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.armoredcars-promo__item-videoIcon {
+  height: 122px;
+  position: absolute;
+  display: block;
+  margin: auto;
+  top: calc(50% - 61px);
+  left: calc(50% - 61px);
+  width: 122px;
+}
+
+/*1200 и меньше */
+@media only screen and (max-width: 1200px) {
+  .armoredcars-promo {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    max-height: 30%;
+  }
+  .armoredcars-promo__leftitem, .armoredcars-promo__rightitem {
+    width: 100%;
+    height: 100%;
+    margin: 5px 0;
+    background-size: 100%;
+    background-position: top center;
+  }
+}
