@@ -10,25 +10,16 @@ body {
   font-weight: normal;
 }
 
-.armoredcars-wrap {
+.archivepage-wrap {
   max-width: 1280px;
   height: 2000px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@font-face {
-  font-family: "MrEavesXLModOT-Reg";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/MrEavesXLModOT-Reg.ttf") format("woff2");
-}
-
-@font-face {
-  font-family: "MrEavesXLModOT";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../MrEavesXLModOT-Bold.ttf") format("woff2");
+h3, li, ul {
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
@@ -45,7 +36,21 @@ body {
   src: url("../MrEavesXLModOT-Bold.ttf") format("woff2");
 }
 
-.armoredcars-promo {
+@font-face {
+  font-family: "MrEavesXLModOT-Reg";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/MrEavesXLModOT-Reg.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "MrEavesXLModOT";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../MrEavesXLModOT-Bold.ttf") format("woff2");
+}
+
+.archivepage-promo {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -54,26 +59,24 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 600px;
   width: 100%;
 }
 
-.armoredcars-promo__item {
+.archivepage-promo__item {
   position: relative;
 }
 
-.armoredcars-promo__item-content {
+.archivepage-promo__item-content {
   position: absolute;
-  height: 10%;
   width: 100%;
 }
 
-.armoredcars-promo__item-content-wrap {
+.archivepage-promo__item-content-wrap {
   padding-left: 60px;
   padding-top: 80px;
 }
 
-.armoredcars-promo__item-breadcrumbs {
+.archivepage-promo__item-breadcrumbs {
   color: #ffffff;
   font-size: 1rem;
   font-weight: normal;
@@ -81,11 +84,11 @@ body {
   text-transform: uppercase;
 }
 
-.armoredcars-promo__item-text {
+.archivepage-promo__item-text {
   color: #ffffff;
 }
 
-.armoredcars-promo__item-text h2 {
+.archivepage-promo__item-text h2 {
   font-family: MrEavesXLModOT, Helvetica, Roboto, Arial, sans-serif;
   font-size: 2.2rem;
   font-weight: 700;
@@ -93,7 +96,7 @@ body {
   text-transform: uppercase;
 }
 
-.armoredcars-promo__item-text p {
+.archivepage-promo__item-text p {
   color: #ffffff;
   height: 150px;
   font-family: MrEavesXLModOT-Reg, Helvetica, Roboto, Arial, sans-serif;
@@ -111,7 +114,7 @@ body {
   vertical-align: middle;
 }
 
-.armoredcars-promo__item-button {
+.archivepage-promo__item-button {
   background-color: transparent;
   color: #ffffff;
   font-family: MrEavesXLModOT, Helvetica, Roboto, Arial, sans-serif;
@@ -122,7 +125,7 @@ body {
   width: 200px;
 }
 
-.armoredcars-promo__item-button:hover {
+.archivepage-promo__item-button:hover {
   border: solid 2px #ffffff;
   background-color: #ffffff;
   color: #0020b1;
@@ -131,7 +134,7 @@ body {
   transition: 0.5s;
 }
 
-.armoredcars-promo__item-videoIcon {
+.archivepage-promo__item-videoIcon {
   height: 122px;
   position: absolute;
   display: block;
@@ -143,7 +146,7 @@ body {
 
 /*1200 и меньше */
 @media only screen and (max-width: 1200px) {
-  .armoredcars-promo {
+  .archivepage-promo {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
@@ -155,13 +158,312 @@ body {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-    max-height: 30%;
   }
-  .armoredcars-promo__leftitem, .armoredcars-promo__rightitem {
+  .archivepage-promo__leftitem, .archivepage-promo__rightitem {
     width: 100%;
     height: 100%;
     margin: 5px 0;
     background-size: 100%;
     background-position: top center;
   }
+}
+
+.archivepage-content-wrap {
+  width: 100%;
+  padding: 50px;
+}
+
+.archivepage-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.archivepage-title {
+  margin-bottom: 20px;
+}
+
+.archivepage-title h1 {
+  font-family: MrEavesXLModOT, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1.9rem;
+  font-weight: bold;
+  letter-spacing: 0.28px;
+  color: #000000;
+}
+
+.archivepage-filters {
+  width: 30%;
+  min-width: 200px;
+  margin-right: 20px;
+}
+
+.archivepage-filter:last-child {
+  margin-top: 40px;
+}
+
+.archivepage-filter__title {
+  width: 100%;
+  padding: 25px 0px;
+  border-top: solid 1px #e1e1e1;
+  border-bottom: solid 1px #e1e1e1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.archivepage-filter__title h3 {
+  font-family: MrEavesXLModOT, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.16px;
+  color: #000000;
+  text-transform: uppercase;
+  margin-left: 10px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.archivepage-filter__icon {
+  width: 26px;
+  height: 26px;
+}
+
+.archivepage-filter__items {
+  list-style: none;
+  padding: 17px 0px 0px 20px;
+}
+
+.archivepage-filter__item-link {
+  color: #000000;
+  font-family: MrEavesXLModOT-Reg, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: normal;
+  letter-spacing: 0.16px;
+}
+
+.archivepage-filter__item-link:hover {
+  color: #0020b1;
+}
+
+.archivepage-filter__item-name {
+  margin-bottom: 9px;
+}
+
+.archivepage-cars {
+  width: 70%;
+  min-width: 880px;
+}
+
+.archivepage-car {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: solid 1px #e1e1e1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 277px;
+}
+
+.archivepage-car__logo {
+  padding: 9px 0px 9px 9px;
+}
+
+.archivepage-car__img {
+  height: auto;
+  min-width: 305px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.archivepage-car__title {
+  font-family: MrEavesXLModOT, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.18px;
+  color: #000000;
+  margin: 22px 0px 15px;
+}
+
+.archivepage-car__title span {
+  font-size: 1.3rem;
+  font-family: MrEavesXLModOT-Reg, Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.archivepage-car__details {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(12%, #ececec), color-stop(51%, #d7d7dc), color-stop(98%, #ececec));
+  background-image: -o-linear-gradient(left, #ececec 12%, #d7d7dc 51%, #ececec 98%);
+  background-image: linear-gradient(to right, #ececec 12%, #d7d7dc 51%, #ececec 98%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 34px;
+  list-style: none;
+  padding-left: 35px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.archivepage-car__details li {
+  color: #000000;
+  font-family: MrEavesXLModOT-Reg, Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  letter-spacing: 0.13px;
+}
+
+.archivepage-car__details li::after {
+  content: " \2022";
+  margin: 0 8px 0 5px;
+}
+
+.archivepage-car__details li:last-child::after {
+  content: "";
+}
+
+.archivepage-car__details li span {
+  font-family: MrEavesXLModOT, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.11px;
+}
+
+.archivepage-car__descr {
+  color: #504f4f;
+  font-family: MrEavesXLModOT-Reg, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: 0.13px;
+  margin: 20px 0;
+}
+
+.archivepage-car__viewDetailsBtn {
+  border-radius: 3px;
+  border: solid 1px #0020b1;
+  background-color: #ffffff;
+  color: #0020b1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: MrEavesXLModOT, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  height: 41px;
+  text-align: left;
+  padding: 0 17px;
+  width: 154px;
+}
+
+.archivepage-car__viewDetailsBtn:hover {
+  border-color: #ffffff;
+  background-color: #0020b1;
+  color: #ffffff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.archivepage-car_padding {
+  margin-left: 35px;
+}
+
+.archivepage-pagination {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.archivepage-pagination .pagination {
+  margin: 0;
+}
+
+.archivepage-pagination .pagination .current {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: MrEavesXLModOT-Reg, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 900;
+  letter-spacing: 0.11px;
+  padding: 0 0.5rem;
+}
+
+.archivepage-pagination .pagination a {
+  padding: 0 0.5rem;
+}
+
+.archivepage-pagination .pagination .dots {
+  margin-right: 53px;
+  position: relative;
+}
+
+.archivepage-pagination .pagination .dots::before {
+  content: "";
+  position: absolute;
+  width: 53px;
+  height: 1px;
+  top: 7px;
+  background: #0120b1;
+}
+
+.archivepage-pagination .pagination .prev {
+  position: relative;
+  margin-right: 27px;
+}
+
+.archivepage-pagination .pagination .prev::after {
+  content: "";
+  position: absolute;
+  top: -18px;
+  width: 27px;
+  height: 27px;
+  background-image: url("../img/arrows-2.svg");
+}
+
+.archivepage-pagination .pagination .next {
+  position: relative;
+}
+
+.archivepage-pagination .pagination .next::after {
+  content: "";
+  position: absolute;
+  top: -18px;
+  width: 27px;
+  height: 27px;
+  background-image: url("../img/arrows-2.svg");
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }

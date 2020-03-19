@@ -5,14 +5,15 @@
 @import "_mixin.scss";
       
 // General
-@import "_armoredcars-general.scss";
+@import "_archivepage-general.scss";
 @import "_fonts.scss"; 
 
 // Components
 @import "_fonts.scss"; 
 
 // Parts
-@import "_armoredcars-promo.scss";
+@import "_archivepage-promo.scss";
+@import "_archivepage-content.scss";
  
 //Media Queries
 // @import "_media.scss";

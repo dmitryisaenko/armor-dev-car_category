@@ -1,0 +1,250 @@
+.archivepage-content-wrap{
+   width: 100%;
+   padding: 50px;
+}
+
+.archivepage-content{
+   display: flex;
+   justify-content: space-between;
+}
+
+.archivepage-title{
+   margin-bottom: 20px;
+   h1{
+      font-family: $font-bold;
+      font-size: 1.9rem;
+      font-weight: bold;
+      letter-spacing: 0.28px;
+      color: $color-black;
+   }
+}
+
+.archivepage-filters{
+   width: 30%;
+   min-width: 200px;
+   margin-right: 20px;
+   // flex-grow: 1;
+   // flex-shrink: 1;
+}
+
+.archivepage-filter:last-child{
+   margin-top: 40px;
+}
+
+.archivepage-filter__title{
+   width: 100%;
+   padding: 25px 0px;
+   border-top: solid 1px $color-grey2;
+   border-bottom: solid 1px $color-grey2;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   cursor: pointer;
+   h3{
+      font-family: $font-bold;
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 0.16px;
+      color: $color-black;
+      text-transform: uppercase;
+      margin-left: 10px;
+      align-items: center;
+   }
+}
+
+.archivepage-filter__icon{
+   width: 26px;
+   height: 26px;
+}
+
+.archivepage-filter__items{
+   list-style: none;
+   padding: 17px 0px 0px 20px;
+}
+
+.archivepage-filter__item-link{
+   color: $color-black;
+   font-family: $font-regular;
+   font-size: 1.3rem;
+   font-weight: normal;
+   letter-spacing: 0.16px;
+   
+   &:hover{
+      color: $color-bluetext;
+   }
+}
+
+.archivepage-filter__item-name{
+   margin-bottom: 9px;
+}
+
+.archivepage-cars{
+   width: 70%;
+   min-width: 880px;
+   // flex-grow: 1;
+   // flex-shrink: 0;
+}
+
+.archivepage-car{
+   background-color: $color-white;;
+   border-radius: 10px;
+   border: solid 1px $color-grey2;
+   display: flex;
+   height: 277px;
+}
+
+.archivepage-car__logo{
+   padding: 9px 0px 9px 9px;
+}
+
+.archivepage-car__img{
+   height: auto;
+   min-width: 305px;
+   border-radius: 10px 0px 0px 10px;
+}
+
+.archivepage-car__content{
+   
+}
+
+
+
+.archivepage-car__title{
+   font-family: $font-bold;
+   font-size: 1.2rem;
+   font-weight: bold;
+   letter-spacing: 0.18px;
+   color: $color-black;
+   margin: 22px 0px 15px;
+   span{
+      font-size: 1.3rem;
+      font-family: $font-regular;
+      font-weight: normal;
+      text-transform: uppercase;
+   }
+}
+
+.archivepage-car__details{
+   background-image: linear-gradient(to right, #ececec 12%, #d7d7dc 51%, #ececec 98%);
+   display: flex;
+   height: 34px;
+   list-style: none;
+   padding-left: 35px;
+   align-items: center;
+   li{
+      color: $color-black;
+      font-family: $font-regular;
+      font-weight: normal;
+      font-size: 1rem;
+      letter-spacing: 0.13px;
+      &::after{
+         content: " \2022";
+         margin: 0 8px 0 5px;
+      }
+      &:last-child::after{
+         content: "";
+      }
+      span{
+         font-family: $font-bold;
+         font-size: 0.9rem;
+         font-weight: bold;
+         text-transform: uppercase;
+         letter-spacing: 0.11px;
+
+      }
+   }
+}
+
+.archivepage-car__descr{
+   color: $color-grey3;
+   font-family: $font-regular;
+   font-size: 1rem;
+   font-weight: normal;
+   line-height: 1.5;
+   letter-spacing: 0.13px;
+   margin: 20px 0;
+}
+
+.archivepage-car__viewDetailsBtn{
+   border-radius: 3px;
+   border: solid 1px $color-bluetext;
+   background-color: $color-white;
+   color: $color-bluetext;
+   display: flex;
+   justify-content: space-between;
+   font-family: $font-bold;
+   font-size: 0.8rem;
+   font-weight: bold;
+   height: 41px;
+   text-align: left;
+   padding: 0 17px;
+   width: 154px;
+   &:hover{
+      border-color: $color-white;
+      background-color: $color-bluetext;
+      color: $color-white;
+      transition: 0.5s;
+   }
+}
+
+.archivepage-car_padding{
+   margin-left: 35px;
+}
+
+.archivepage-pagination{
+   display: flex;
+   justify-content: flex-end;
+   .pagination{
+      margin: 0;
+      .current{
+         background-color: $color-white;
+         color: $color-black;
+         font-family: $font-regular;
+         font-size: 0.9rem;
+         font-weight: 900;
+         letter-spacing: 0.11px;
+         padding: 0 0.5rem;
+      }
+      a{
+         padding: 0 0.5rem;
+         
+      }
+      .dots{
+         margin-right: 53px;
+         position: relative;
+         &::before{
+            content: "";
+            position: absolute;
+            width: 53px;
+            height: 1px;
+            top: 7px;
+            background: #0120b1;
+         }   
+      }
+      .prev{
+         position: relative;
+         margin-right: 27px;
+         &::after{
+            content: "";
+            position: absolute;
+            top: -18px;
+            width: 27px;
+            height: 27px;
+            background-image: url('../img/arrows-2.svg');
+         }
+      }
+      .next{
+         position: relative;
+         &::after{
+            content: "";
+            position: absolute;
+            top: -18px;
+            width: 27px;
+            height: 27px;
+            background-image: url('../img/arrows-2.svg');
+            transform: rotate(-180deg);
+         }
+      }
+      
+   }
+}
