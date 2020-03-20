@@ -1,6 +1,6 @@
 .archivepage-content-wrap{
    width: 100%;
-   padding: 50px;
+   padding: 0 50px;
 }
 
 .archivepage-content{
@@ -9,7 +9,7 @@
 }
 
 .archivepage-title{
-   margin-bottom: 20px;
+   margin-top: 25px;
    h1{
       font-family: $font-bold;
       font-size: 1.9rem;
@@ -19,12 +19,16 @@
    }
 }
 
+.archive-mobile-filters{
+   display: none;
+}
+
 .archivepage-filters{
    width: 30%;
    min-width: 200px;
    margin-right: 20px;
    // flex-grow: 1;
-   // flex-shrink: 1;
+   flex-shrink: 1;
 }
 
 .archivepage-filter:last-child{
@@ -55,11 +59,24 @@
 .archivepage-filter__icon{
    width: 26px;
    height: 26px;
+   transition: 0.5s;
+   &_closed{
+      // display: none;
+      transform: rotate(90deg);
+      transition: 0.5s;
+   }
 }
 
 .archivepage-filter__items{
+   display: block;
+   height:fit-content;
    list-style: none;
    padding: 17px 0px 0px 20px;
+}
+
+.filter-items_hide{
+   display: none;
+   transition:all 0.5s ease;
 }
 
 .archivepage-filter__item-link{
@@ -81,7 +98,7 @@
 .archivepage-cars{
    width: 70%;
    min-width: 880px;
-   // flex-grow: 1;
+   flex-grow: 1;
    // flex-shrink: 0;
 }
 
@@ -91,6 +108,7 @@
    border: solid 1px $color-grey2;
    display: flex;
    height: 277px;
+   margin-top: 25px;
 }
 
 .archivepage-car__logo{
@@ -116,6 +134,8 @@
    letter-spacing: 0.18px;
    color: $color-black;
    margin: 22px 0px 15px;
+   height: 30px;
+   overflow: hidden;
    span{
       font-size: 1.3rem;
       font-family: $font-regular;
@@ -163,6 +183,8 @@
    line-height: 1.5;
    letter-spacing: 0.13px;
    margin: 20px 0;
+   height: 76px;
+   overflow-y: hidden;
 }
 
 .archivepage-car__viewDetailsBtn{
@@ -194,6 +216,7 @@
 .archivepage-pagination{
    display: flex;
    justify-content: flex-end;
+   margin-top: 35px;
    .pagination{
       margin: 0;
       .current{
@@ -223,11 +246,12 @@
       }
       .prev{
          position: relative;
-         margin-right: 27px;
+         padding-right: 27px;
          &::after{
             content: "";
             position: absolute;
             top: -18px;
+            left: 0;
             width: 27px;
             height: 27px;
             background-image: url('../img/arrows-2.svg');
@@ -235,10 +259,12 @@
       }
       .next{
          position: relative;
+         padding-right: 27px;
          &::after{
             content: "";
             position: absolute;
             top: -18px;
+            right: 0;
             width: 27px;
             height: 27px;
             background-image: url('../img/arrows-2.svg');

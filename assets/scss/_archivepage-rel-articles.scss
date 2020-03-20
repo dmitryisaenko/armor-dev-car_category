@@ -1,0 +1,116 @@
+.archivepage-relarticles-wrap{
+   width: 100%;
+   padding: 0 50px;
+}
+
+.archivepage-relarticles__title{
+   font-family: $font-bold;
+   font-size: 2.2rem;
+   font-weight: bold;
+   letter-spacing: 0.29px;
+   color: $color-black;
+   // margin: 20px 0px 25px;
+   padding-bottom: 7px;
+   border-bottom: 1px solid $color-grey5;
+}
+
+.archivepage-relarticle{
+   border-radius: 11px;
+   border: solid 1px $color-grey4;
+   background-color: $color-white;
+   width: 100%;
+   max-width: 373px;
+   margin-top: 25px;
+}
+
+.archivepage-relarticle__logo{
+   padding: 9px 9px 0px;
+   width: 100%;
+}
+
+.archivepage-relarticle__img{
+   width: 100%;
+   height: auto;
+   border-radius:7px 7px 0px 0px;
+}
+
+.archivepage-relarticle__content{
+   padding: 21px;
+}
+
+.archivepage-relarticle__subtitle{
+   font-family: $font-regular;
+   font-size: 1rem;
+   font-weight: normal;
+   letter-spacing: 0.13px;
+   line-height: 2.38;
+   color: $color-black;
+   text-transform: uppercase;
+}
+
+.archivepage-relarticle__title{
+   font-family: $font-bold;
+   font-size: 1.8rem;
+   font-weight: bold;
+   line-height: 1.2;
+   letter-spacing: 0.24px;
+   color: $color-black;
+}
+
+.archivepage-relarticle__descr{
+   font-family: $font-regular;
+   font-size: 1.1rem;
+   font-weight: normal;
+   line-height: 1.44;
+   letter-spacing: 0.15px;
+   color: $color-black;
+   margin-top: 6px;
+}
+
+.archivepage-relarticle__readmore{
+   color: $color-bluetext;
+   display: flex;
+   align-items: center;
+   font-family: $font-bold;
+   font-size: 0.8rem;
+   font-weight: 900;
+   height: 41px;
+   letter-spacing: 0.13px;
+   text-align: left;
+   padding-right: 17px;
+   i{
+      margin-left: 7px;
+   }
+   &:hover{
+      color: $color-bluetext;
+   }
+}
+
+.archivepage-relarticle__footer{
+   display: flex;
+   justify-content: space-between;
+   border-top: 1px solid $color-grey4;
+   margin-top: 13px;
+   padding-top: 13px;
+}
+
+.archivepage-relarticle__date,
+.archivepage-relarticle__comments{
+   font-family: $font-regular;
+   font-size: 1rem;
+   font-weight: normal;
+   line-height: normal;
+   letter-spacing: 0.13px;
+   color: $color-black;
+   position: relative;
+}
+
+.archivepage-relarticle__comments::before{
+   content: "";
+   position: absolute;
+   background-image: url('../img/chat-comment-oval-speech-bubble-with-text-lines.svg');
+   width: 26px;
+   height: 26px;
+   top: -4px;
+   right: 30px;
+}

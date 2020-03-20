@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Armored Cars Archive</title>
     <!-- <link rel="stylesheet" href="assets/css/app.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.0/foundation.css">
+    <link rel="stylesheet" href="assets/css/app-flex.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.0/foundation.css"> -->
     <!-- <link rel="stylesheet" href="assets/css/all.css"> -->
     <link href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" rel="stylesheet"/>
 
@@ -41,6 +42,34 @@
       <section class="archivepage-content-wrap">
         <div class="archivepage-title">
           <h1>Armored Suvs</h1>
+        </div>
+        <div class="archive-mobile-filters">
+          <div class="archive-mobile-filter">
+            <select id="vehicle-type-dropdown">
+              <option disabled="" selected="">Filter by Vehicle Type</option>
+              <option value="/armored-cars/">All</option>
+              <option value="/armored-cars/type/coupe/">Coupe</option>
+              <option value="/armored-cars/type/crossover/">Crossover</option>
+              <option value="/armored-cars/type/hatchback/">Hatchback</option>
+              <option value="/armored-cars/type/sedan/">Sedan</option>
+              <option value="/armored-cars/type/suv/">SUV</option>
+              <option value="/armored-cars/type/truck/">Truck</option>
+              <option value="/armored-cars/type/van/">Van</option>
+            </select>
+          </div>
+          <div class="archive-mobile-filter">
+            <select id="vehicle-type-dropdown">
+              <option disabled="" selected="">Filter by Vehicle Brand</option>
+              <option value="/armored-cars/">All</option>
+              <option value="/armored-cars/type/coupe/">Coupe</option>
+              <option value="/armored-cars/type/crossover/">Crossover</option>
+              <option value="/armored-cars/type/hatchback/">Hatchback</option>
+              <option value="/armored-cars/type/sedan/">Sedan</option>
+              <option value="/armored-cars/type/suv/">SUV</option>
+              <option value="/armored-cars/type/truck/">Truck</option>
+              <option value="/armored-cars/type/van/">Van</option>
+            </select>
+          </div>
         </div>
         <div class="archivepage-content">
           <div class="archivepage-filters">
@@ -130,6 +159,8 @@
               </ul>
             </div>
           </div>
+          
+          
           <div class="archivepage-cars">
             <div class="archivepage-car">
               <div class="archivepage-car__logo">
@@ -142,6 +173,50 @@
               </div>
               <div class="archivepage-car__content">
                 <h3 class="archivepage-car__title archivepage-car_padding"><span>Suv </span>Bulletproof Rezvani Tank</h3>
+                <ul class="archivepage-car__details">
+                  <li><span>Armor level: </span>B6</li>
+                  <li><span>Engine: </span>6 speed automnatic</li>
+                  <li><span>Drivetrain: </span>4WD</li>
+                </ul>
+                <div class="archivepage-car__descr archivepage-car_padding">
+                  Options include bulletproof glass, military-grade run-flat tires, ram bumpers, electrified door handle (see list below). It also has the option for ballistic armor, with a fuel tank, floorplan and radiator sheathed …
+                </div>
+                <button class="archivepage-car__viewDetailsBtn archivepage-car_padding">View Details<i class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+            <div class="archivepage-car">
+              <div class="archivepage-car__logo">
+                <a href="#">
+                  <img src="assets/img/img-5.png"
+                      srcset="assets/img/img-5@2x.png 2x,
+                              assets/img/img-5@3x.png 3x"
+                      class="archivepage-car__img" alt="Suv Bulletproof Rezvani Tank">
+                </a>
+              </div>
+              <div class="archivepage-car__content">
+                <h3 class="archivepage-car__title archivepage-car_padding"><span>Suv </span>Bulletproof Rezvani Tank</h3>
+                <ul class="archivepage-car__details">
+                  <li><span>Armor level: </span>B6</li>
+                  <li><span>Engine: </span>6 speed automnatic</li>
+                  <li><span>Drivetrain: </span>4WD</li>
+                </ul>
+                <div class="archivepage-car__descr archivepage-car_padding">
+                  Options include bulletproof glass, military-grade run-flat tires, ram bumpers, electrified door handle (see list below). It also has the option for ballistic armor, with a fuel tank, floorplan and radiator sheathed …
+                </div>
+                <button class="archivepage-car__viewDetailsBtn archivepage-car_padding">View Details<i class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+            <div class="archivepage-car">
+              <div class="archivepage-car__logo">
+                <a href="#">
+                  <img src="assets/img/img-5.png"
+                      srcset="assets/img/img-5@2x.png 2x,
+                              assets/img/img-5@3x.png 3x"
+                      class="archivepage-car__img" alt="Suv Bulletproof Rezvani Tank">
+                </a>
+              </div>
+              <div class="archivepage-car__content">
+                <h3 class="archivepage-car__title archivepage-car_padding"><span>Suv </span>Bulletproof Rezvani Tank Rezvani Tank Rezvani Tank Rezvani Tank</h3>
                 <ul class="archivepage-car__details">
                   <li><span>Armor level: </span>B6</li>
                   <li><span>Engine: </span>6 speed automnatic</li>
@@ -169,10 +244,110 @@
           </ul>
         </div>
       </section>
-      <section class="archivepage-articles">
-
+      <section class="archivepage-relarticles-wrap">
+        <div class="archivepage-relarticles__title">
+          Related Articles
+        </div>
+        <div class="row align-justify">
+          <div class="small-12 medium-6 large-4 columns small-centered">
+            <div class="archivepage-relarticle">
+              <div class="archivepage-relarticle__logo">
+                <a href="#">
+                  <img src="assets/img/rel-article-img.png"
+                      srcset="assets/img/rel-article-img.png 2x,
+                              assets/img/rel-article-img.png 3x"
+                      class="archivepage-relarticle__img" alt="Lorem ipsum dolor 
+                      sit amet">
+                </a>
+              </div>
+              <div class="archivepage-relarticle__content">
+                <div class="archivepage-relarticle__subtitle">
+                  Lorem ipsum
+                </div>
+                <h3 class="archivepage-relarticle__title">Lorem ipsum dolor sit amet</h3>
+                <div class="archivepage-relarticle__descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisl urna, iaculis viverra ex non, interdum luctus lacus. Suspendisse potenti. Proin eu erat vel 
+                </div>
+                <a class="archivepage-relarticle__readmore">Read More<i class="fas fa-arrow-right"></i></a>
+                <div class="archivepage-relarticle__footer">
+                  <div class="archivepage-relarticle__date">
+                    11 Nov ‘19
+                  </div>
+                  <div class="archivepage-relarticle__comments">
+                    33
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 columns small-centered">
+            <div class="archivepage-relarticle">
+              <div class="archivepage-relarticle__logo">
+                <a href="#">
+                  <img src="assets/img/rel-article-img.png"
+                      srcset="assets/img/rel-article-img.png 2x,
+                              assets/img/rel-article-img.png 3x"
+                      class="archivepage-relarticle__img" alt="Lorem ipsum dolor 
+                      sit amet">
+                </a>
+              </div>
+              <div class="archivepage-relarticle__content">
+                <div class="archivepage-relarticle__subtitle">
+                  Lorem ipsum
+                </div>
+                <h3 class="archivepage-relarticle__title">Lorem ipsum dolor sit amet</h3>
+                <div class="archivepage-relarticle__descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisl urna, iaculis viverra ex non, interdum luctus lacus. Suspendisse potenti. Proin eu erat vel 
+                </div>
+                <a class="archivepage-relarticle__readmore">Read More<i class="fas fa-arrow-right"></i></a>
+                <div class="archivepage-relarticle__footer">
+                  <div class="archivepage-relarticle__date">
+                    11 Nov ‘19
+                  </div>
+                  <div class="archivepage-relarticle__comments">
+                    33
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 columns small-centered">
+            <div class="archivepage-relarticle">
+              <div class="archivepage-relarticle__logo">
+                <a href="#">
+                  <img src="assets/img/rel-article-img.png"
+                      srcset="assets/img/rel-article-img.png 2x,
+                              assets/img/rel-article-img.png 3x"
+                      class="archivepage-relarticle__img" alt="Lorem ipsum dolor 
+                      sit amet">
+                </a>
+              </div>
+              <div class="archivepage-relarticle__content">
+                <div class="archivepage-relarticle__subtitle">
+                  Lorem ipsum
+                </div>
+                <h3 class="archivepage-relarticle__title">Lorem ipsum dolor sit amet</h3>
+                <div class="archivepage-relarticle__descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisl urna, iaculis viverra ex non, interdum luctus lacus. Suspendisse potenti. Proin eu erat vel 
+                </div>
+                <a class="archivepage-relarticle__readmore">Read More<i class="fas fa-arrow-right"></i></a>
+                <div class="archivepage-relarticle__footer">
+                  <div class="archivepage-relarticle__date">
+                    11 Nov ‘19
+                  </div>
+                  <div class="archivepage-relarticle__comments">
+                    33
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
+
     </div>
+    <script src="assets/libs/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.0/foundation.js"></script>
     <script src="assets/js/scripts.js"></script>
   </body>

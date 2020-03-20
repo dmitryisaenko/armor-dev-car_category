@@ -1,0 +1,32 @@
+/*1200 и меньше */
+@media only screen and (max-width : 1200px) {
+   .archivepage-promo{
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+   }
+   .archivepage-promo__item{
+      margin: 0;
+      &:first-child{
+         margin-bottom: 5px;
+      }
+   }
+}
+
+/*660 и меньше */
+@media only screen and (max-width : 660px) {
+   .archivepage-promo__item-bgimg img{
+      width: 100%;
+      height: auto;
+   }
+}
+
+/*420 и меньше */
+@media only screen and (max-width : 420px) {
+    
+}
+
+/*320 и меньше */
+@media only screen and (max-width : 320px) {
+
+}

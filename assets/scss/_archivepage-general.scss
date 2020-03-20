@@ -16,7 +16,17 @@ body{
    margin-right: auto;
 }
 
-h3, li, ul{
+h1, h2, h3, li, ul{
    margin: 0;
    padding: 0;
 }
+
+
+@media only screen and (max-width : 1200px) {
+   .archivepage-wrap{
+      max-width: auto;
+      margin: 0 auto;
+   }
+}
+
+

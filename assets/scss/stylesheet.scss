@@ -14,8 +14,10 @@
 // Parts
 @import "_archivepage-promo.scss";
 @import "_archivepage-content.scss";
+@import "_archivepage-rel-articles.scss";
  
 //Media Queries
-// @import "_media.scss";
+@import "_archivepage-promo_media.scss";
+@import "_archivepage-content_media.scss";
 
 

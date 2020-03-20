@@ -1,0 +1,151 @@
+@media only screen and (min-width : 1200px) {
+   .archivepage-title{
+      margin-bottom: 25px;
+   }
+   .archivepage-car:first-child{
+      margin-top: 0px;
+   }
+}
+
+/*1200 и меньше */
+@media only screen and (max-width : 1200px) {
+   .archivepage-content-wrap{
+      max-width: 900px;
+      padding: 0;
+      margin: 30px auto;
+   }
+   .archivepage-title{
+      
+      margin-top: 25px auto;
+   }
+   .archivepage-filters{
+      display: none;
+   }
+   .archive-mobile-filters{
+      display: flex;
+      width: 100%;
+      margin: 15px 0px 0px;
+      select{
+         margin: 0;
+      }
+   }
+   .archive-mobile-filter{
+      margin: 0 10px;
+      width: 34%;
+   }
+   .archivepage-cars{
+      width: 100%;
+      
+   }
+   .archivepage-pagination{
+      justify-content: center;
+   }
+
+}
+
+/*991 и меньше */
+@media only screen and (max-width : 991px) {
+   .archivepage-content-wrap{
+      max-width: 100%;
+      padding: 0px 30px 0px;
+   }
+   .archive-mobile-filters{
+      justify-content: space-between;
+   }
+   .archive-mobile-filter{
+      margin: 0;
+      width: 48%;
+   }
+   .archivepage-cars{
+      display: flex;
+      justify-content: space-between;
+      min-width: auto;
+      width: 100%;
+      flex-wrap: wrap;
+   }
+   .archivepage-car{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: auto;
+      width: 48%;
+   }
+   .archivepage-car__logo{
+      width: 100%;
+      padding: 9px 9px 0px 9px;
+   }
+   .archivepage-car__img{
+      height: auto;
+      width: 100%;
+      min-width: auto;
+      
+      border-radius: 10px 10px 0px 0px;
+   }
+   .archivepage-car__details{
+      display: block;
+      height: auto;
+      li{
+         &::after{
+            content: "";
+         }
+         &:last-child::after{
+            content: "";
+         }
+      }
+   }
+   .archivepage-car__viewDetailsBtn{
+      margin-bottom: 20px;
+   }
+
+   .archivepage-car_padding{
+      margin-left: 15px;
+      margin-right: 15px;
+   }
+}
+
+
+/*768 и меньше */
+@media only screen and (max-width : 768px) {
+   .archivepage-content-wrap{
+      // padding: 50px 0px 0px;
+   }
+   .archivepage-cars{
+      justify-content: center;
+   }
+   .archivepage-car{
+      width: 70%;
+   }
+
+}
+
+/*660 и меньше */
+@media only screen and (max-width : 660px) {
+   .archivepage-car{
+      width: 100%;
+   }
+}
+
+/*550 и меньше */
+@media only screen and (max-width : 550px) {
+   .archivepage-car{
+      width: 100%;
+   }
+}
+
+/*420 и меньше */
+@media only screen and (max-width : 420px) {
+   .archive-mobile-filters{
+      display: block;
+   }
+   .archive-mobile-filter{
+      width: 100%;
+      &:first-child{
+         margin-bottom: 15px;
+      }
+   }
+}
+
+/*320 и меньше */
+@media only screen and (max-width : 320px) {
+
+}
