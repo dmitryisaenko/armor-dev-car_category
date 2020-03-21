@@ -1,0 +1,52 @@
+/*1200 и меньше */
+@media only screen and (max-width : 1200px) {
+   .archivepage-relarticles-wrap {
+      max-width: 900px;
+      padding: 0;
+      margin: 30px auto;
+  }
+//   .archivepage-relarticles__controls_left{
+//    left: -50px;
+// }
+
+// .archivepage-relarticles__controls_right{
+//    right: -50px;
+// }
+   
+}
+
+
+/*991 и меньше */
+@media only screen and (max-width : 991px) {
+   .archivepage-relarticles-wrap {
+      max-width: none;
+      padding: 0 30px;
+   }
+   .archivepage-relarticles{
+      width: 90%;
+      margin: 0 auto;
+   }
+}
+
+
+/*768 и меньше */
+@media only screen and (max-width : 768px) {
+   .archivepage-relarticles__title{
+      padding: 20px 0px 7px;
+   }
+
+}
+
+/*660 и меньше */
+@media only screen and (max-width : 660px) {
+}
+
+/*420 и меньше */
+@media only screen and (max-width : 420px) {
+    
+}
+
+/*320 и меньше */
+@media only screen and (max-width : 320px) {
+
+}

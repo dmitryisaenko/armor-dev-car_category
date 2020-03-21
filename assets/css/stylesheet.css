@@ -22,10 +22,24 @@ h1, h2, h3, li, ul {
   padding: 0;
 }
 
+h2 {
+  font-family: MrEavesXLModOT, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1.9rem;
+  font-weight: bold;
+  letter-spacing: 0.28px;
+  color: #000000;
+}
+
 @media only screen and (max-width: 1200px) {
   .archivepage-wrap {
     max-width: 100%;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  h2 {
+    font-size: 1.7rem;
   }
 }
 
@@ -194,7 +208,7 @@ h1, h2, h3, li, ul {
   margin-top: 25px;
 }
 
-.archivepage-title h1 {
+.archivepage-title h2 {
   font-family: MrEavesXLModOT, Helvetica, Roboto, Arial, sans-serif;
   font-size: 1.9rem;
   font-weight: bold;
@@ -531,13 +545,48 @@ h1, h2, h3, li, ul {
   padding: 0 50px;
 }
 
+.archivepage-relarticles {
+  position: relative;
+}
+
+.archivepage-relarticles__controls_left,
+.archivepage-relarticles__controls_right {
+  position: absolute;
+  top: 50%;
+}
+
+.archivepage-relarticles__controls_left {
+  left: -40px;
+}
+
+.archivepage-relarticles__controls_right {
+  right: -40px;
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.archivepage-relarticles__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+          align-content: stretch;
+}
+
 .archivepage-relarticles__title {
-  font-family: MrEavesXLModOT, Helvetica, Roboto, Arial, sans-serif;
-  font-size: 2.2rem;
-  font-weight: bold;
-  letter-spacing: 0.29px;
-  color: #000000;
-  padding-bottom: 7px;
+  padding: 35px 0px 7px;
   border-bottom: 1px solid #979797;
 }
 
@@ -820,7 +869,7 @@ h1, h2, h3, li, ul {
 @media only screen and (max-width: 991px) {
   .archivepage-content-wrap {
     max-width: 100%;
-    padding: 0px 30px 0px;
+    padding: 0px 30px;
   }
   .archive-mobile-filters {
     -webkit-box-pack: justify;
@@ -944,4 +993,35 @@ h1, h2, h3, li, ul {
   }
 }
 
+/*320 и меньше */
+/*1200 и меньше */
+@media only screen and (max-width: 1200px) {
+  .archivepage-relarticles-wrap {
+    max-width: 900px;
+    padding: 0;
+    margin: 30px auto;
+  }
+}
+
+/*991 и меньше */
+@media only screen and (max-width: 991px) {
+  .archivepage-relarticles-wrap {
+    max-width: none;
+    padding: 0 30px;
+  }
+  .archivepage-relarticles {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/*768 и меньше */
+@media only screen and (max-width: 768px) {
+  .archivepage-relarticles__title {
+    padding: 20px 0px 7px;
+  }
+}
+
+/*660 и меньше */
+/*420 и меньше */
 /*320 и меньше */
