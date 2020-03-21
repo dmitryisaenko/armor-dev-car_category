@@ -32,6 +32,9 @@
    .archive-mobile-filter{
       margin: 0 10px;
       width: 34%;
+      &:first-child{
+         margin-left: 0;
+      }
    }
    .archivepage-cars{
       width: 100%;
@@ -69,6 +72,9 @@
       flex-wrap: wrap;
       height: auto;
       width: 48%;
+   }
+   .archivepage-car__title-wrap{
+      height: 70px;
    }
    .archivepage-car__logo{
       width: 100%;
@@ -120,6 +126,9 @@
 
 /*660 и меньше */
 @media only screen and (max-width : 660px) {
+   .archivepage-content-wrap{
+      padding: 0px 50px 0px;
+   }
    .archivepage-car{
       width: 100%;
    }
@@ -127,6 +136,9 @@
 
 /*550 и меньше */
 @media only screen and (max-width : 550px) {
+   .archivepage-content-wrap{
+      padding: 0px 20px 0px;
+   }
    .archivepage-car{
       width: 100%;
    }
@@ -134,6 +146,9 @@
 
 /*420 и меньше */
 @media only screen and (max-width : 420px) {
+   .archivepage-content-wrap{
+      padding: 0px 10px 0px;
+   }
    .archive-mobile-filters{
       display: block;
    }

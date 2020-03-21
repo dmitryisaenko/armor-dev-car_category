@@ -24,7 +24,7 @@ h1, h2, h3, li, ul {
 
 @media only screen and (max-width: 1200px) {
   .archivepage-wrap {
-    max-width: auto;
+    max-width: 100%;
     margin: 0 auto;
   }
 }
@@ -66,6 +66,7 @@ h1, h2, h3, li, ul {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 600px;
   width: 100%;
 }
 
@@ -73,15 +74,24 @@ h1, h2, h3, li, ul {
   position: relative;
   max-width: 632px;
   width: 100%;
-  max-height: 603px;
   height: 100%;
   margin: 0 3px;
+  background-repeat: no-repeat;
+}
+
+.archivepage-promo__item:first-child {
+  background-image: url("../img/car-get-a-quote.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.archivepage-promo__item:last-child {
+  background-image: url("../img/video.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .archivepage-promo__item-content {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
 }
 
@@ -102,8 +112,9 @@ h1, h2, h3, li, ul {
   color: #ffffff;
 }
 
-.archivepage-promo__item-text h2 {
+.archivepage-promo__item-text h1 {
   font-family: MrEavesXLModOT, Helvetica, Roboto, Arial, sans-serif;
+  text-shadow: 0px 0px 2px black;
   font-size: 2.2rem;
   font-weight: 700;
   letter-spacing: 0.32px;
@@ -112,7 +123,7 @@ h1, h2, h3, li, ul {
 
 .archivepage-promo__item-text p {
   color: #ffffff;
-  height: 150px;
+  margin: 20px 0px 50px;
   font-family: MrEavesXLModOT-Reg, Helvetica, Roboto, Arial, sans-serif;
   font-size: 1.12rem;
   line-height: 1.33;
@@ -150,9 +161,7 @@ h1, h2, h3, li, ul {
 
 .archivepage-promo__item-bgimg img {
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100%;
 }
 
 .archivepage-promo__item-videoIcon {
@@ -324,15 +333,24 @@ h1, h2, h3, li, ul {
   border-radius: 10px 0px 0px 10px;
 }
 
+.archivepage-car__title-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+}
+
 .archivepage-car__title {
   font-family: MrEavesXLModOT, Helvetica, Roboto, Arial, sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
   letter-spacing: 0.18px;
   color: #000000;
-  margin: 22px 0px 15px;
-  height: 30px;
-  overflow: hidden;
 }
 
 .archivepage-car__title span {
@@ -641,31 +659,107 @@ h1, h2, h3, li, ul {
 /*1200 и меньше */
 @media only screen and (max-width: 1200px) {
   .archivepage-promo {
+    height: 450px;
+  }
+  .archivepage-promo__item:first-child {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/car-get-a-quote.jpg");
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../img/car-get-a-quote.jpg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../img/car-get-a-quote.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .archivepage-promo__item-content-wrap {
+    padding: 40px;
+  }
+  .archivepage-promo__item-text p {
+    width: 100%;
+    margin: 10px 0px 30px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .archivepage-promo {
+    height: 400px;
+  }
+  .archivepage-promo__item-content-wrap {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .archivepage-promo {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+    width: 100%;
+    height: 800px;
   }
   .archivepage-promo__item {
+    width: 100%;
+    max-width: 100%;
     margin: 0;
   }
   .archivepage-promo__item:first-child {
-    margin-bottom: 5px;
+    height: 60%;
+    background: url("../img/car-get-a-quote.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .archivepage-promo__item:last-child {
+    margin-top: 10px;
+    height: 40%;
+  }
+  .archivepage-promo__item-content-wrap {
+    padding: 40px;
+  }
+  .archivepage-promo__item-text p {
+    width: 332px;
   }
 }
 
 /*660 и меньше */
 @media only screen and (max-width: 660px) {
-  .archivepage-promo__item-bgimg img {
+  .archivepage-promo {
+    height: 600px;
+  }
+  .archivepage-promo__item:first-child {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/car-get-a-quote.jpg");
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../img/car-get-a-quote.jpg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../img/car-get-a-quote.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 70%;
+  }
+  .archivepage-promo__item:last-child {
+    height: 30%;
+  }
+  .archivepage-promo__item-text p {
     width: 100%;
-    height: auto;
+  }
+  .archivepage-promo__item-videoIcon {
+    height: 90px;
+    position: absolute;
+    display: block;
+    margin: auto;
+    top: calc(50% - 45px);
+    left: calc(50% - 45px);
+    width: 90px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .archivepage-promo__item:last-child {
+    margin-top: 5px;
+  }
+  .archivepage-promo__item-content-wrap {
+    padding: 20px;
+  }
+  .archivepage-promo__item-text h1 {
+    font-size: 1.9rem;
   }
 }
 
@@ -707,6 +801,9 @@ h1, h2, h3, li, ul {
   .archive-mobile-filter {
     margin: 0 10px;
     width: 34%;
+  }
+  .archive-mobile-filter:first-child {
+    margin-left: 0;
   }
   .archivepage-cars {
     width: 100%;
@@ -766,6 +863,9 @@ h1, h2, h3, li, ul {
     height: auto;
     width: 48%;
   }
+  .archivepage-car__title-wrap {
+    height: 70px;
+  }
   .archivepage-car__logo {
     width: 100%;
     padding: 9px 9px 0px 9px;
@@ -810,6 +910,9 @@ h1, h2, h3, li, ul {
 
 /*660 и меньше */
 @media only screen and (max-width: 660px) {
+  .archivepage-content-wrap {
+    padding: 0px 50px 0px;
+  }
   .archivepage-car {
     width: 100%;
   }
@@ -817,6 +920,9 @@ h1, h2, h3, li, ul {
 
 /*550 и меньше */
 @media only screen and (max-width: 550px) {
+  .archivepage-content-wrap {
+    padding: 0px 20px 0px;
+  }
   .archivepage-car {
     width: 100%;
   }
@@ -824,6 +930,9 @@ h1, h2, h3, li, ul {
 
 /*420 и меньше */
 @media only screen and (max-width: 420px) {
+  .archivepage-content-wrap {
+    padding: 0px 10px 0px;
+  }
   .archive-mobile-filters {
     display: block;
   }

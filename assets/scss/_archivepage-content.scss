@@ -126,16 +126,20 @@
 }
 
 
-
+.archivepage-car__title-wrap{
+   display: flex;
+   align-items: center;
+   height: 70px;
+}
 .archivepage-car__title{
    font-family: $font-bold;
    font-size: 1.2rem;
    font-weight: bold;
    letter-spacing: 0.18px;
    color: $color-black;
-   margin: 22px 0px 15px;
-   height: 30px;
-   overflow: hidden;
+   // margin: 22px 0px 15px;
+   // height: 30px;
+   // overflow: hidden;
    span{
       font-size: 1.3rem;
       font-family: $font-regular;
